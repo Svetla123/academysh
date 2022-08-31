@@ -1,0 +1,393 @@
+/*
+=====================================================================
+*   Ceevee v1.0 Layout Stylesheet
+*   url: styleshout.com
+*   03-18-2014
+=====================================================================
+
+   TOC:
+   a. General Styles
+   b. Header Styles
+   c. About Section
+   d. Resume Section
+   e. Portfolio Section
+   f. Call To Action Section
+   g. Testimonials Section
+   h. Contact Section
+   i. Footer
+
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: linear-gradient(-45deg, #027368, #01403a, #2c3936, #475954);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+    position: relative;
+    height: 800px;
+    min-height: 500px;
+    width: 100%;
+    /* background: #000000 url(../images/background-image.png) no-repeat top center; */
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* vertically center banner section */
+header:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header .banner-text {
+    width: 100%;
+}
+header .banner-text h1 {
+    font: 90px/1.1em "opensans-bold", sans-serif;
+    color: rgb(174, 174, 174);
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(87, 87, 87, 0.8);
+}
+header .banner-text h3 {
+    font: 18px/1em "librebaskerville-regular", serif;
+    color: #7c7c7c;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 1px 2px 2px rgba(87, 87, 87, 0.8);
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+    color: rgb(187, 183, 190);
+}
+header .banner-text hr {
+    width: 60%;
+    margin: 18px auto 24px auto;
+    border-color: #000000;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* scrolldown link */
+header .scrolldown a {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -29px;
+    color: #80a69f;
+    display: block;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    border-radius: 100%;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+header .scrolldown a:hover {
+    color: #027368;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. About Section -> COMMENTS
+/* ------------------------------------------------------------------ */
+
+#about {
+    /* background: #fff; */
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+
+#about a,
+#about a:visited {
+    color: #fff;
+}
+#about a:hover,
+#about a:focus {
+    color: #11abb0;
+}
+
+#about h2 {
+    font: 22px/30px "opensans-bold", sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+#about p {
+    line-height: 30px;
+    color: #7a7a7a;
+}
+#about .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+#about .contact-details {
+    width: 41.66667%;
+}
+#about .download {
+    width: 58.33333%;
+    padding-top: 6px;
+}
+#about .main-col {
+    padding-right: 5%;
+}
+#about .download .button {
+    margin-top: 6px;
+    background: #444;
+}
+#about .download .button:hover {
+    background: #fff;
+    color: #2b2b2b;
+}
+#about .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+.comment {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    padding-right: 10px;
+    font-size: 30px;
+    line-height: 72px;
+    text-align: left;
+    float: left;
+    color: #fff;
+}
+.border {
+    border-bottom: 1px solid #d9d5d2;
+}
+/* ------------------------------------------------------------------ */
+/* d. Resume Section ->ABOUT SECTION
+/* ------------------------------------------------------------------ */
+
+#resume {
+    background: #d9d5d2;
+    padding-top: 10px;
+    padding-bottom: 72px;
+    overflow: hidden;
+}
+
+#resume a,
+#resume a:visited {
+    color: #027368;
+}
+#resume a:hover,
+#resume a:focus {
+    color: #313131;
+}
+
+#resume h1 {
+    font: 18px/24px "opensans-bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#resume h1 span {
+    border-bottom: 3px solid #027368;
+    padding-bottom: 6px;
+}
+#resume h3 {
+    font: 25px/30px "opensans-bold", sans-serif;
+}
+
+#resume .header-col {
+    padding-top: 9px;
+}
+#resume .main-col {
+    padding-right: 10%;
+}
+
+.education,
+.work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e8e8;
+}
+#resume .info {
+    font: 16px/24px "librebaskerville-italic", serif;
+    color: #6e7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+}
+#resume .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#resume .date {
+    font: 15px/24px "opensans-regular", sans-serif;
+    margin-top: 6px;
+}
+.learn-more-header {
+    font: 40px/1em "librebaskerville-regular", serif;
+    color: #000000;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 30px;
+    text-align: right;
+    display: inline-block;
+    margin-top: 0px;
+    /* text-shadow: 1px 2px 2px rgba(87, 87, 87, 0.8); */
+}
+
+.academysh-paragraph {
+    font: 20px/1em "librebaskerville-regular", serif;
+    color: #6e7881;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 90%;
+    line-height: 30px;
+    /* margin-bottom: 20px; */
+    text-align: right;
+    display: inline-block;
+    margin-top: 0px;
+}
+.about-academysh {
+    color: rgb(20, 20, 20);
+}
+.picture-about {
+    width: 350px;
+    height: 150px;
+    border-bottom: 3px solid #027368;
+    padding-bottom: 6px;
+}
+
+.about-descr {
+    font: 30px/1em;
+    color: #6e7881;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+footer {
+    padding-top: 48px;
+    color: #303030;
+    background-color: #0f0f0f;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+footer a,
+footer a:visited {
+    color: #525252;
+}
+footer a:hover,
+footer a:focus {
+    color: #fff;
+}
+
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+}
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.ie footer .copyright li {
+    display: inline;
+}
+footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+}
+footer .copyright li:first-child:before {
+    display: none;
+}
+
+/* social links */
+footer .social-links {
+    margin: 18px 0 30px 0;
+    padding: 0;
+    font-size: 30px;
+}
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #f06000;
+}
+
+footer .social-links li:first-child {
+    margin-left: 0;
+}
+
+/* Go To Top Button */
+#go-top {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -30px;
+}
+#go-top a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #525252;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    color: #fff;
+    font-size: 21px;
+    line-height: 60px;
+    border-radius: 100%;
+}
+#go-top a:hover {
+    background-color: #0f9095;
+}
